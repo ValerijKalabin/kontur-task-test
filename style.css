@@ -52,6 +52,10 @@ a {
     background-color: #E1CEBE;
 }
 
+.background-color-brand-blue {
+    background: #BED1E1;
+}
+
 .info-link:hover {
     color: #404040;
 }
@@ -135,6 +139,10 @@ input:-moz-placeholder {
 .nav-link:hover {
     background-color: #ffffff;
     color: #404040;
+}
+
+.page {
+    margin-bottom: 24px;
 }
 
 .catalog {
@@ -492,10 +500,6 @@ input:-moz-placeholder {
     text-decoration: none;
 }
 
-.company {
-    margin-bottom: 24px;
-}
-
 .company-title {
     font-style: normal;
     font-weight: 500;
@@ -515,7 +519,61 @@ input:-moz-placeholder {
     margin: 0 0 23px 0;
 }
 
-.footer {
-    outline: 1px solid red;
+.footer-info-container {
+    padding-top: 17px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 18px;
+}
+
+.footer-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0 0 0 14px;
+}
+
+.copyright-container {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+}
+
+.copyright {
+    padding: 0;
+    margin: 0 15px 10px 0;
+}
+
+.feedback {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.developer {
+    margin: 0 12px 35px 0;
+}
+
+.developer-info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.developer-image {
+    padding: 0;
+    margin: 0 0 35px 0;
 }
 
