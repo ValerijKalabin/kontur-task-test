@@ -66,7 +66,7 @@
     <main>
         <div class="container-xl">
             <div class="row">
-                <div class="col-3 catalog-container">
+                <div class="col-3 d-none d-xl-block catalog-container">
                     <div class="catalog">
                         <h2 class="catalog__title">Каталог</h2>
                         <div class="btn-group dropright w-100 catalog__button-container">
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-9 card-container">
+                <div class="col-12 col-xl-9 card-container">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -282,8 +282,8 @@
                     </div>
                     <div class="cards">
                         <h2 class="cards__title">Популярные товары</h2>
-                        <div class="d-flex justify-content-between">
-                            <div class="card">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                            <div class="card mb-3 mb-sm-0">
                                 <img src="./images/no-image.jpg" class="card-img-top" alt="Нет изображения">
                                 <div class="card-body-container">
                                     <div class="card-body">
@@ -301,9 +301,8 @@
                                         <button class="card-goods-cart">В корзину</button>
                                     </div>
                                 </div>
-                                
                             </div>
-                            <div class="card">
+                            <div class="card mb-3 mb-sm-0">
                                 <img src="./images/no-image.jpg" class="card-img-top" alt="Нет изображения">
                                 <div class="card-body-container">
                                     <div class="card-body">
@@ -322,7 +321,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card d-block d-sm-none d-lg-block">
                                 <img src="./images/no-image.jpg" class="card-img-top" alt="Нет изображения">
                                 <div class="card-body-container">
                                     <div class="card-body">
@@ -344,12 +343,52 @@
                         </div>
                     </div>
                     <div class="sales">
-                        <h2 class="sales-title">Акции</h2>
+                        <div class="sales-title-container">
+                            <h2 class="sales-title">Акции</h2>
+                            <a class="sales-link" href="#">Все акции</a>
+                        </div>
+                        <div class="sales-cards d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-between">
+                            <div class="sales-card mb-5 mb-sm-0">
+                                <img src="./images/sales1.jpg" alt="Распродажа" class="sales-card-image">
+                                <span class="sales-card-time">12.12.20</span>
+                                <a class="sales-card-text" href="#">Скидки до 70%!</a>
+                            </div>
+                            <div class="sales-card mb-5 mb-sm-0">
+                                <img src="./images/sales2.jpg" alt="Распродажа" class="sales-card-image">
+                                <span class="sales-card-time">12.12.20</span>
+                                <a class="sales-card-text" href="#">Супер-скидки месяца на популярные товары!</a>
+                            </div>
+                            <div class="sales-card d-block d-sm-none d-lg-block">
+                                <img src="./images/sales3.jpg" alt="Распродажа" class="sales-card-image">
+                                <span class="sales-card-time">12.12.20</span>
+                                <a class="sales-card-text" href="#">Оставьте нам отзыв и получите подарок</a>
+                            </div>
+                        </div>
                     </div>
+                    <section class="company">
+                        <h1 class="company-title">О компании</h1>
+                        <p class="company-text">
+                            Равным образом постоянный количественный рост и сфера нашей активности играет важную роль 
+                            в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! рамки 
+                            и место обучения кадров требуют определения и уточнения новых предложений. Задача организации, 
+                            в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и 
+                            реализации дальнейших направлений развития. С другой стороны сложившаяся структура организации 
+                            позволяет выполнять важные задания по разработке модели развития.
+                        </p>
+                        <p class="company-text">
+                            Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в 
+                            формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! рамки и 
+                            место обучения кадров требуют определения и уточнения новых предложений. Задача организации, 
+                            в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и 
+                            реализации дальнейших направлений развития. С другой стороны сложившаяся структура организации 
+                            позволяет выполнять важные задания по разработке модели развития.
+                        </p>
+                    </section>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer"></footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
