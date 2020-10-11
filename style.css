@@ -1,9 +1,14 @@
-.outline-red {
-    outline: 1px solid red;
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #404040;
 }
 
-.height-100 {
-    height: 100px;
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
 }
 
 .font-info {
@@ -26,18 +31,6 @@
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.02em;
-}
-
-body {
-    color: #404040;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    color: inherit;
 }
 
 .header {
@@ -292,14 +285,13 @@ input:-moz-placeholder {
     margin: 0 0 21px 0;
 }
 
-.card {
-    width: 260px;
+.card-item {
     border: none;
     border-radius: 3px;
     border: 2px solid transparent;
 }
 
-.card:hover {
+.card-item:hover {
     border: 2px solid #E1CEBE;
     box-shadow: 0 0 20px rgba(225, 206, 190, 0.5);
 }
@@ -309,24 +301,24 @@ input:-moz-placeholder {
     background: #EBEDEE;
 }
 
-.card-body {
+.card-item-body {
     border-bottom: 1px solid #FFFFFF;
     padding: 20px 8px;
 }
 
-.card-body:last-of-type {
+.card-item-body:last-of-type {
     border: none;
 }
 
-.card-text {
+.card-item-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     min-height: 42px;
 }
 
-.card-title {
+.card-item-title {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -457,15 +449,11 @@ input:-moz-placeholder {
 }
 
 .sales-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 54px;
 }
 
 .sales-card {
-    width: 260px;
+    border: none;
 }
 
 .sales-card-time {
@@ -473,12 +461,13 @@ input:-moz-placeholder {
     max-width: 64px;
     box-sizing: border-box;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 13px;
+    text-align: center;
     background: #BED1E1;
     border-radius: 3px;
-    padding: 4px 12px;
+    padding: 7px 0;
     margin: -12px 0 9px 10px;
     position: relative;
     z-index: 1;
@@ -511,7 +500,7 @@ input:-moz-placeholder {
 
 .company-text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.02em;
@@ -528,7 +517,7 @@ input:-moz-placeholder {
 
 .footer-info {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.02em;
@@ -538,7 +527,7 @@ input:-moz-placeholder {
 
 .copyright-container {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     display: flex;
@@ -551,7 +540,7 @@ input:-moz-placeholder {
 
 .feedback {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     padding: 0;
@@ -563,6 +552,7 @@ input:-moz-placeholder {
 }
 
 .developer-info {
+    font-family: 'M PLUS 1p', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
