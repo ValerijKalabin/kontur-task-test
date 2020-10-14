@@ -1,0 +1,139 @@
+.header {
+    margin-bottom: 30px;
+}
+
+.header__info {
+    background-color: #EBEDEE;
+}
+
+.header__info-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0;
+    outline: 1px solid red;
+}
+
+.header__info-link {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #404040;
+}
+
+.header__info-link:hover {
+    color: #404040;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.header__info-phone {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 17px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #404040;
+    outline: 1px solid red;
+}
+
+.header__logo {
+    margin: 0;
+    padding: 4px 0 16px;
+    outline: 1px solid red;
+}
+
+.header__search {
+    margin: 0;
+    padding: 27px 20px 20px 15px;
+    outline: 1px solid red;
+}
+
+.header__search-slogan {
+    margin: 0 0 13px 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #404040;
+}
+
+.header__search-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E1CEBE;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.header__search-input {
+    display: block;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: calc(100% - 50px);
+}
+
+.header__search-button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.header__search-image {
+    width: 24px;
+    height: 24px;
+    margin: 5px 7px 7px 0;
+}
+
+.header__search-image:hover {
+    opacity: 0.5;
+}
+
+.header__cart {
+    margin: 0;
+    padding: 23px 17px 0 0;
+    outline: 1px solid red;
+}
+
+.header__cart-container {
+    box-sizing: border-box;
+    width: 134px;
+    height: 78px;
+    padding: 19px 21px 18px 13px;
+    background-color: #EBEDEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__cart-button {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+}
+
+.header__cart-button:hover {
+    opacity: 0.5;
+}
+
+.header__cart-number {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 4px 17px 2px;
+    margin: 0;
+    background: #BED1E1;
+    border-radius: 3px;
+}

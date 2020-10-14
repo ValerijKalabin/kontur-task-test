@@ -6,47 +6,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>KONTUR task test</title>
   </head>
   <body>
     <header class="header">
-        <div class="container-fluid background-color-brand-grey">
-            <div class="container-xl">
-                <div class="row">
-                    <ul class="col-8 col-lg-4 d-none d-sm-flex flex-row justify-content-between mt-2 mb-2 pr-0 font-info">
-                        <li class="d-none d-sm-block"><a class="info-link" href="#">Новости</a></li>
-                        <li class="d-none d-sm-block"><a class="info-link" href="#">Вопрос-ответ</a></li>
-                        <li class="d-none d-sm-block"><a class="info-link" href="#">О компании</a></li>
-                    </ul>
-                    <ul class="col-12 col-sm-4 col-lg-8 d-flex flex-column flex-lg-row justify-content-lg-end align-items-end mt-2 mb-2 font-contact">
-                        <li class="d-block">+7 (383) 000-00-01</li>
-                        <li class="d-none d-sm-block ml-lg-4">+7 (383) 000-00-02</li>
-                    </ul>
-                </div>
+        <div class="header__info container-fluid">
+            <div class="container-xl d-flex">
+                <ul class="header__info-links col-8 col-lg-4 d-none d-sm-flex justify-content-between align-items-center">
+                    <li><a class="header__info-link" href="#">Новости</a></li>
+                    <li><a class="header__info-link" href="#">Вопрос-ответ</a></li>
+                    <li><a class="header__info-link" href="#">О компании</a></li>
+                </ul>
+                <ul class="header__info-phone col-12 col-sm-4 col-lg-8 d-flex flex-column flex-lg-row justify-content-lg-end align-items-end">
+                    <li class="d-block">+7 (383) 000-00-01</li>
+                    <li class="d-none d-sm-block ml-lg-5">+7 (383) 000-00-02</li>
+                </ul>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="container-xl">
-                <div class="row mb-3">
-                    <div class="col-12 col-sm-4 mt-1">
-                        <a type="button" href="#"><img src="./images/logo.svg" alt="Логотип"></a>
-                    </div>
-                    <div class="col-8 col-lg-6 d-none d-sm-block mt-1">
-                        <p class="mt-4 font-slogan ">Текст слогана или описание деятельности компании</p>
-                        <form action="/" name="form-search">
-                            <div class="d-flex justify-content-between form-container">
-                                <input class="d-block border-0 form-input" type="text" name="input-search" placeholder="Найти товар ...">
-                                <button class="d-block border-0 bg-transparent" type="submit" name="submit-search">
-                                    <img class="form-image" src="./images/search.svg" alt="Найти">
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-2 mt-4 d-none d-lg-flex justify-content-end">
-                        <div class="cart">
-                            <a class="btn cart-image" type="button" href="#"><img src="./images/cart.svg" alt="Корзина"></a>
-                            <p class="cart-number">0</p>
+            <div class="container-xl d-flex">
+                <div class="header__logo col-12 col-sm-4">
+                    <a type="button" href="#"><img src="./images/logo.svg" alt="Логотип"></a>
+                </div>
+                <div class="header__search col-8 col-lg-6 d-none d-sm-block">
+                    <p class="header__search-slogan">Текст слогана или описание деятельности компании</p>
+                    <form action="/" name="search-form">
+                        <div class="header__search-container">
+                            <input class="header__search-input" type="text" name="search-input" placeholder="Найти товар ...">
+                            <button class="header__search-button" type="submit" name="search-button">
+                                <img class="header__search-image" src="./images/search.svg" alt="Найти">
+                            </button>
                         </div>
+                    </form>
+                </div>
+                <div class="header__cart col-2 d-none d-lg-flex justify-content-end">
+                    <div class="header__cart-container">
+                        <a class="header__cart-button" type="button" href="#"><img src="./images/cart.svg" alt="Корзина"></a>
+                        <p class="header__cart-number">0</p>
                     </div>
                 </div>
             </div>
