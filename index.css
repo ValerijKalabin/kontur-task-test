@@ -1,16 +1,34 @@
+.content-container {
+    width: 100%;
+    max-width: 1145px;
+    min-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .header {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .header__info {
+    width: 100%;
     background-color: #EBEDEE;
 }
 
-.header__info-links {
+.header__info-items {
     list-style-type: none;
     margin: 0;
     padding: 8px 0;
-    outline: 1px solid red;
+}
+
+.header__info-item {
+    padding: 0;
+    margin: 0 0 0 52px;
+}
+
+.header__info-item:first-of-type {
+    margin: 0;
 }
 
 .header__info-link {
@@ -28,29 +46,55 @@
     opacity: 0.5;
 }
 
-.header__info-phone {
+.header__info-phones {
     list-style-type: none;
     margin: 0;
-    padding: 8px 17px;
+    padding: 8px 17px 8px 0;
     font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
     color: #404040;
-    outline: 1px solid red;
+}
+
+.header__info-phone {
+    padding: 0;
+    margin: 0 36px 0 0;
+}
+
+.header__info-phone:last-of-type {
+    margin: 0;
 }
 
 .header__logo {
     margin: 0;
     padding: 4px 0 16px;
-    outline: 1px solid red;
+}
+
+@media screen and (min-width: 1145px) {
+    .header__logo {
+        margin: 0 215px 0 0;
+    }
 }
 
 .header__search {
-    margin: 0;
-    padding: 27px 20px 20px 15px;
-    outline: 1px solid red;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .header__search {
+        display: block;
+        width: calc(100% - 328px);
+        padding: 27px 0 20px 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .header__search {
+        width: 520px;
+    }
 }
 
 .header__search-slogan {
@@ -63,6 +107,13 @@
     line-height: 21px;
     letter-spacing: 0.02em;
     color: #404040;
+    display: none;
+}
+
+@media screen and (min-width: 870px) {
+    .header__search-slogan {
+        display: block;
+    }
 }
 
 .header__search-container {
@@ -81,6 +132,22 @@
     width: calc(100% - 50px);
 }
 
+.header__search-input::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E1CEBE;
+}
+
+.header__search-input:-moz-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E1CEBE;
+}
+
 .header__search-button {
     display: block;
     border: none;
@@ -91,7 +158,7 @@
 .header__search-image {
     width: 24px;
     height: 24px;
-    margin: 5px 7px 7px 0;
+    margin: 5px 3px 7px 0;
 }
 
 .header__search-image:hover {
@@ -101,7 +168,12 @@
 .header__cart {
     margin: 0;
     padding: 23px 17px 0 0;
-    outline: 1px solid red;
+}
+
+@media screen and (min-width: 1145px) {
+    .header__cart {
+        margin: 0 0 0 102px;
+    }
 }
 
 .header__cart-container {
@@ -136,4 +208,101 @@
     margin: 0;
     background: #BED1E1;
     border-radius: 3px;
+}
+
+.header__nav {
+    width: 100%;
+    background-color: #E1CEBE;
+}
+
+.header__nav-link {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    font-style: normal;
+    color: #404040;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.header__nav-link:hover {
+    background-color: #ffffff;
+    color: #404040;
+    text-decoration: none;
+}
+
+.main-container {
+    margin-bottom: 34px;
+}
+
+.catalog {
+    background-color: #BED1E1;
+    width: 260px;
+    padding: 26px 7px 34px 28px;
+    border-radius: 3px;
+    margin: 0 25px 0 0;
+    display: none;
+}
+
+@media screen and (min-width: 1145px) {
+    .catalog {
+        display: block;
+    }
+}
+
+.catalog__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0;
+    margin: 0 0 17px 0;
+}
+
+.catalog__button_not-chevron {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+    background-color: #BED1E1;
+    box-sizing: border-box;
+    width: 225px;
+    padding: 0;
+    border: none;
+    outline: none;
+    margin: 0 0 23px 0;
+}
+
+.catalog__button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+    background-color: #BED1E1;
+    background-image: url(./images/chevron-right.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    box-sizing: border-box;
+    width: 225px;
+    padding: 0 25px 0 0;
+    border: none;
+    outline: none;
+    margin: 0 0 23px 0;
+}
+
+.main-content {
+    width: 100%;
+}
+
+@media screen and (min-width: 1145px) {
+    .main-content {
+        width: 830px;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #BED1E1;
 }
