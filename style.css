@@ -1,89 +1,11 @@
-.catalog__button_not-chevron:active, 
-.catalog__button_not-chevron:focus,
-.catalog__button_not-chevron:hover {
-    outline: none !important;
-    color: #ffffff;
-}
-
-.catalog__button_not-chevron::-moz-focus-inner {
-    border: 0 !important;
-}
 
 
-.catalog__button:active, 
-.catalog__button:focus,
-.catalog__button:hover {
-    outline: none !important;
-    color: #ffffff;
-    background-image: url(./images/chevron-right-white.svg);
-}
 
-.catalog__button::-moz-focus-inner {
-    border: 0 !important;
-}
 
-.dropdown-menu {
-    margin: 0;
-    padding: 24px 13px 31px 25px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-}
 
-.dropdown-item {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    padding: 0;
-    margin: 0 0 15px 0;
-}
 
-.dropdown-item:hover {
-    color: #566E98;
-    background-color: #ffffff;
-}
 
-.carousel {
-    margin-bottom: 31px;
-}
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 70px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    width: 70px;
-    background-color: #E1CEBE;
-    opacity: 0.6;
-}
-
-.carousel-caption {
-    top: 0;
-    left: 15%;
-    right: 15%;
-    bottom: 0;
-}
-
-.carousel-text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #404040;
-    opacity: 0.3;
-    width: 527px;
-    min-height: 37px;
-    margin: 0;
-    padding: 34px 69px 43px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .cards {
     margin-bottom: 22px;
