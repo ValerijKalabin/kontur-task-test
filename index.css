@@ -7,7 +7,7 @@
 }
 
 .header {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     width: 100%;
 }
 
@@ -241,7 +241,7 @@
 }
 
 .main-container {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
 }
 
 .catalog {
@@ -335,6 +335,7 @@
 }
 
 .dropdown-item {
+    font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -359,7 +360,7 @@
 }
 
 .carousel {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
 }
 
 .carousel-control-prev,
@@ -382,6 +383,7 @@
 }
 
 .carousel-text {
+    font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -400,7 +402,332 @@
     transform: translate(-50%, -50%);
 }
 
+.cards {
+    margin-bottom: 24px;
+}
+
+.cards__title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0;
+    margin: 0 0 23px 0;
+}
+
+.card-item {
+    border: none;
+    border-radius: 3px;
+    border: 2px solid transparent;
+}
+
+.card-item:hover {
+    border: 2px solid #E1CEBE;
+    box-shadow: 0 0 20px rgba(225, 206, 190, 0.5);
+}
+
+.card-body-container {
+    padding: 0 12px;
+    background: #EBEDEE;
+}
+
+.card-item-body {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 22px 8px;
+}
+
+.card-item-body:last-of-type {
+    border: none;
+}
+
+.card-item-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    min-height: 42px;
+}
+
+.card-item-title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-goods-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+
+.card-goods-reduce {
+    width: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #ffffff;
+    background-image: url(./images/minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-goods-reduce:active, 
+.card-goods-reduce:focus,
+.card-goods-reduce:hover {
+    outline: none !important;
+    opacity: 0.5;
+}
+
+.card-goods-reduce::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.card-goods-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    width: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-goods-increase {
+    width: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #ffffff;
+    background-image: url(./images/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-goods-increase:active, 
+.card-goods-increase:focus,
+.card-goods-increase:hover {
+    outline: none !important;
+    opacity: 0.5;
+}
+
+.card-goods-increase::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.card-goods-cart {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 19px;
+    width: 105px;
+    height: 40px;
+    background: #BED1E1;
+    border: none;
+    border-radius: 3px;
+}
+
+.card-goods-cart:active, 
+.card-goods-cart:focus,
+.card-goods-cart:hover {
+    outline: none !important;
+    background-color: #E1CEBE;
+}
+
+.card-goods-cart::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.sales-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 21px;
+}
+
+.sales-title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0;
+    margin: 0;
+}
+
+.sales-link {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #566E98;
+}
+
+.sales-link:hover {
+    color: #E1CEBE;
+    text-decoration: none;
+}
+
+.sales-cards {
+    margin-bottom: 56px;
+}
+
+.sales-card {
+    border: 2px solid transparent;
+    border-radius: 1px;
+}
+
+.sales-card-time {
+    display: block;
+    max-width: 64px;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background: #BED1E1;
+    border-radius: 3px;
+    padding: 7px 0;
+    margin: -14px 0 9px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.sales-card-text {
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #566E98;
+    padding: 0;
+    margin: 0;
+}
+
+.sales-card-text:hover {
+    color: #E1CEBE;
+    text-decoration: none;
+}
+
+.company-title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0;
+    margin: 0 0 27px 0;
+}
+
+.company-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
 .footer {
     width: 100%;
     background-color: #BED1E1;
+}
+
+.footer-info-container {
+    padding-top: 17px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 18px;
+}
+
+.footer-info {
+    padding-top: 27px;
+    margin: 0;
+}
+
+.footer-info-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0 0 0 14px;
+}
+
+.copyright-container {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+}
+
+.copyright {
+    padding: 0;
+    margin: 0 15px 10px 0;
+}
+
+.feedback {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.developer-container {
+    padding-top: 10px;
+}
+
+.developer {
+    margin: 0 12px 35px 0;
+}
+
+.developer-info {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.developer-image {
+    padding: 0;
+    margin: 0 0 35px 0;
 }
